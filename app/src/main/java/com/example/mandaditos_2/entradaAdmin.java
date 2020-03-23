@@ -2,7 +2,6 @@ package com.example.mandaditos_2;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.solver.widgets.Snapshot;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,8 +17,6 @@ import com.google.firebase.database.ValueEventListener;
 
 public class entradaAdmin extends AppCompatActivity {
 
-    Button entrar;
-    EditText datos;
     DatabaseReference ref;
 
 
@@ -28,9 +25,9 @@ public class entradaAdmin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_entrada_admin);
 
-        Button entrar = (Button)findViewById(R.id.btnAdmin);
+        Button entrar = findViewById(R.id.btnAdmin);
 
-        EditText datos = (EditText)findViewById(R.id.edtPassword);
+        EditText datos = findViewById(R.id.edtPassword);
         final String editPass = datos.getText().toString();
 
         entrar.setOnClickListener(new View.OnClickListener() {
@@ -43,7 +40,7 @@ public class entradaAdmin extends AppCompatActivity {
 
                         String firebasePass = dataSnapshot.child("pass").getValue().toString();
 
-                        if (firebasePass==editPass){
+                        if (firebasePass.equals(editPass)){
                             Intent i = new Intent(entradaAdmin.this,MenuAdmin.class);
                             startActivity(i);
                         }else {
