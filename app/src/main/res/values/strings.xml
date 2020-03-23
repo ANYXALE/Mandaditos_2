@@ -3,4 +3,6 @@
     <string name="todo">TODO</string>
     <string name="comprar">Comprar</string>
     <string name="button">Button</string>
+    <string name="admin_password">Admin Password</string>
+    <string name="menu_de_administrador">Menu de Administrador</string>
 </resources>
