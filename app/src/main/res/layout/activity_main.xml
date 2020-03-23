@@ -23,7 +23,7 @@
         android:contentDescription="@string/todo" />
 
     <Button
-        android:id="@+id/btnComprar"
+        android:id="@+id/btnProductos"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

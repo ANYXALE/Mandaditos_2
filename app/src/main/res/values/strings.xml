@@ -5,4 +5,6 @@
     <string name="button">Button</string>
     <string name="admin_password">Admin Password</string>
     <string name="menu_de_administrador">Menu de Administrador</string>
+    <string name="negocios">Negocios</string>
+    <string name="productos">Productos</string>
 </resources>
