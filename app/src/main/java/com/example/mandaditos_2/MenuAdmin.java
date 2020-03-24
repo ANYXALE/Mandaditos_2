@@ -7,25 +7,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class MenuAdmin extends AppCompatActivity {
 
-
-    Button admin;
-
+    Button negocios;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_menu_admin);
 
-        admin = findViewById(R.id.btnAdmin);
-        admin.setOnClickListener(new View.OnClickListener() {
+        negocios = findViewById(R.id.btnNegocios);
+        negocios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this,entradaAdmin.class);
+                Intent i = new Intent(MenuAdmin.this,RegistroNegocios.class);
                 startActivity(i);
             }
         });
-
     }
 }
