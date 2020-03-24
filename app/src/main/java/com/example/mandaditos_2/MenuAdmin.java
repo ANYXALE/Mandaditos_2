@@ -16,7 +16,7 @@ public class MenuAdmin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_admin);
 
-        negocios = (Button) findViewById(R.id.btnAdmin);
+        negocios = findViewById(R.id.btnNegocios);
         negocios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
