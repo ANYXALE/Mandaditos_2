@@ -28,6 +28,7 @@ public class entradaAdmin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_entrada_admin);
+        getSupportActionBar().hide();
 
         datos = findViewById(R.id.edtPassword);
 
