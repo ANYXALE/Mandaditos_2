@@ -9,23 +9,40 @@
 
     <ImageView
         android:id="@+id/Logo"
-        android:layout_width="300dp"
-        android:layout_height="250dp"
+        android:layout_width="170dp"
+        android:layout_height="145dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="65dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/mandaditos"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@mipmap/mandaditos" />
 
+    <EditText
+        android:id="@+id/edtCelular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="phone"
+        tools:ignore="LabelFor"
+        android:hint="@string/ingresa_tu_celular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Logo"
+        android:importantForAutofill="no" />
     <Button
         android:id="@+id/btnComprar"
-        android:layout_width="250dp"
-        android:layout_height="75dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
@@ -38,10 +55,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Logo"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintTop_toBottomOf="@+id/edtCelular"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnAdmin"
@@ -60,4 +76,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
