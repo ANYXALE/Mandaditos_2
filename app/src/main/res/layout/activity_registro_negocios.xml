@@ -4,22 +4,163 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8DBC4"
-    tools:context=".RegistroNegocios">
+    android:background="#F7F9F9"
+    tools:context=".RegistroNegocios" >
 
     <ImageView
-        android:id="@+id/Logo"
-        android:layout_width="170dp"
-        android:layout_height="145dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="65dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/imageNegocio"
+        android:layout_width="93dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="52dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/mandaditos"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        android:contentDescription="@string/Nego" />
+
+    <EditText
+        android:id="@+id/TxNomNegocio"
+        android:layout_width="234dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:hint="@string/nombre_del_negocio"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toEndOf="@+id/imageNegocio"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TexDescripNeg"
+        android:layout_width="349dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/descripccion"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxNomNegocio" />
+
+    <TextView
+        android:id="@+id/TExAgrega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/agregar_producto"
+        android:textIsSelectable="false"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.707"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TexDescripNeg" />
+
+    <ImageView
+        android:id="@+id/imageProducto"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TexDescripNeg"
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        android:contentDescription="@string/produ" />
+
+    <EditText
+        android:id="@+id/TxNomProduct"
+        android:layout_width="241dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="@string/nombre_del_producto"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/imageProducto"
+        app:layout_constraintTop_toBottomOf="@+id/TExAgrega" />
+
+    <EditText
+        android:id="@+id/Txprecio"
+        android:layout_width="34dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:ems="10"
+        android:hint="@string/precio"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/TxNomProduct"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="34dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:background="#FF5722"
+        android:text="@string/agreg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/TExAgrega"
+        app:layout_constraintTop_toBottomOf="@+id/TexDescripNeg" />
+
+    <Button
+        android:id="@+id/BtnRegistNegocio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="@string/registrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txviewregis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registro_del_negocio"
+        app:layout_constraintBottom_toTopOf="@+id/TxNomNegocio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.313" />
+
+    <ImageButton
+        android:id="@+id/btnimanego"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FF5722"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.173"
+        app:srcCompat="@drawable/mas"
+        android:contentDescription="@string/btnimanego"
+        android:onClick="onclick"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
