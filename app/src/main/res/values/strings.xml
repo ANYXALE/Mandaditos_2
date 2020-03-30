@@ -9,6 +9,18 @@
     <string name="vacio">-</string>
     <string name="ingresa_tu_celular">Ingresa tu Celular</string>
 
+    <string name="Nego">nego</string>
+    <string name="nombre_del_negocio">Nombre del Negocio</string>
+    <string name="descripccion">Descripcion</string>
+    <string name="agregar_producto">Agregar Producto</string>
+    <string name="produ">produ</string>
+    <string name="nombre_del_producto">Nombre del Producto</string>
+    <string name="precio">$</string>
+    <string name="agreg">+</string>
+    <string name="registrar">registro</string>
+    <string name="registro_del_negocio">REGISTRO NEGOCIO</string>
+    <string name="btnimanego">im</string>
+
     <string-array name="Ubicacion">
         <item>Jamay</item>
         <item>LaBarca</item>
