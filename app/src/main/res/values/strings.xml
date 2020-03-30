@@ -8,4 +8,11 @@
     <string name="registro_administrativo">Registro Administrativo</string>
     <string name="vacio">-</string>
     <string name="ingresa_tu_celular">Ingresa tu Celular</string>
+
+    <string-array name="Ubicacion">
+        <item>Jamay</item>
+        <item>LaBarca</item>
+        <item>Ocotlan</item>
+    </string-array>
+
 </resources>
