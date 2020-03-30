@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "441242204910-7hdku43aairi14c7gsm3hqvnovpplatg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mandaditos_2",
+            "certificate_hash": "d67b084d8dc84359e28b3d0ffeb4327f67b86da3"
+          }
+        },
+        {
           "client_id": "441242204910-ohgabl98uop2a97bl37gs0tjjhfp7uvc.apps.googleusercontent.com",
           "client_type": 3
         }

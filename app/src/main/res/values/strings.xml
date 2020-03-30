@@ -8,4 +8,15 @@
     <string name="registro_administrativo">Registro Administrativo</string>
     <string name="vacio">-</string>
     <string name="ingresa_tu_celular">Ingresa tu Celular</string>
+    <string name="descripccion">Descripccion</string>
+    <string name="precio">$</string>
+    <string name="agregar_producto">Agregar Producto</string>
+    <string name="nombre_del_negocio">Nombre del Negocio</string>
+    <string name="nombre_del_producto">Nombre del Producto</string>
+    <string name="agreg">+</string>
+    <string name="registro_del_negocio">REGISTRO DEL NEGOCIO</string>
+    <string name="registrar">Registrar</string>
+    <string name="Nego">nego</string>
+    <string name="produ">produ</string>
+    <string name="btnimanego">btnimanego</string>
 </resources>
