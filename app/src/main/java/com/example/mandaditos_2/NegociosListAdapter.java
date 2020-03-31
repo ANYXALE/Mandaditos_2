@@ -69,8 +69,8 @@ public class NegociosListAdapter extends BaseAdapter {
         Negocios negocios = listaNegocios.get(position);
 
         holder.Negocio.setText(negocios.getNegocio());
-        holder.Categoria.setText(negocios.getNegocio());
-        holder.Descripcion.setText(negocios.getNegocio());
+        holder.Categoria.setText(negocios.getCategoria());
+        holder.Descripcion.setText(negocios.getDescripcion());
 
         byte[] negocioImage = negocios.getImage();
         Bitmap bitmap = BitmapFactory.decodeByteArray(negocioImage,0, negocioImage.length);
