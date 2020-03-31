@@ -20,11 +20,20 @@
     <string name="registrar">registrar</string>
     <string name="registro_del_negocio">REGISTRO NEGOCIO</string>
     <string name="btnimanego">im</string>
+    <string name="itemnego">itemNego</string>
+    <string name="categoria">Categoria</string>
+    <string name="mostrar">Mostrar</string>
 
     <string-array name="Ubicacion">
         <item>Jamay</item>
-        <item>LaBarca</item>
+        <item>La Barca</item>
         <item>Ocotlan</item>
+    </string-array>
+
+    <string-array name="Categorias">
+        <item>Comida</item>
+        <item>Alcohol</item>
+        <item>Farmacia</item>
     </string-array>
 
 </resources>

@@ -7,44 +7,82 @@
     android:background="#F7F9F9"
     tools:context=".RegistroNegocios" >
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imageNegocio"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="32dp"
-        android:contentDescription="@string/Nego"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txviewregis"
-        app:srcCompat="@android:drawable/ic_menu_gallery" />
-
     <EditText
         android:id="@+id/TxNomNegocio"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="85dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:ems="10"
         android:hint="@string/nombre_del_negocio"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageNegocio"
         app:layout_constraintTop_toBottomOf="@+id/txviewregis" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageNegocio"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/Nego"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txviewregis" />
+
+    <ImageButton
+        android:id="@+id/btnimanego"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="8dp"
+        android:background="#ffffff"
+        android:contentDescription="@string/btnimanego"
+        app:layout_constraintBottom_toTopOf="@+id/TxNomNegocio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageNegocio"
+        app:layout_constraintTop_toBottomOf="@+id/txviewregis"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/mas" />
+
+    <Spinner
+        android:id="@+id/spinCategoria"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageNegocio"
+        app:layout_constraintTop_toBottomOf="@+id/TxNomNegocio" />
 
     <EditText
         android:id="@+id/TexDescripNeg"
         android:layout_width="0dp"
-        android:layout_height="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:ems="10"
         android:gravity="start|top"
         android:hint="@string/descripccion"
         android:importantForAutofill="no"
-        android:inputType="textMultiLine"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TxNomNegocio" />
@@ -53,7 +91,7 @@
         android:id="@+id/TExAgrega"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:text="@string/agregar_producto"
         android:textIsSelectable="false"
         android:textSize="24sp"
@@ -85,7 +123,7 @@
         android:ems="10"
         android:hint="@string/nombre_del_producto"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
+        android:inputType="text"
         app:layout_constraintStart_toEndOf="@+id/imageProducto"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
@@ -116,7 +154,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:background="#FF5722"
@@ -130,41 +168,34 @@
         android:id="@+id/BtnRegistNegocio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="32dp"
         android:text="@string/registrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/txviewregis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
         android:text="@string/registro_del_negocio"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/btnimanego"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="8dp"
-        android:background="#ffffff"
-        android:contentDescription="@string/btnimanego"
-        android:onClick="onclick"
-        app:layout_constraintBottom_toTopOf="@+id/TxNomNegocio"
+    <Button
+        android:id="@+id/btnMostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/mostrar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageNegocio"
-        app:layout_constraintTop_toBottomOf="@+id/txviewregis"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/mas" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/BtnRegistNegocio" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
